@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                bat 'fsutil volume diskfree C:\\'
             }
         }
     }
